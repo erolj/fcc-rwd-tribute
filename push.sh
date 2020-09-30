@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "» Push updates to GIT.."
+echo "» Generating static pages..."
+hugo
+echo "» Push updates to GIT..."
 git add . && sleep 1
 echo "Apa yang diubah kali ini?"
 read -r GIT_COMMENT && sleep 1
