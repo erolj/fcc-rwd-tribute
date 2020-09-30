@@ -1,0 +1,62 @@
+:root {
+  --bg-color1: hsl(255, 50%, 20%);
+  --bg-color2: hsl(255, 50%, 10%);
+  --txt-color: white;
+  --txt-color-link: hsl(170, 50%, 50%);
+}
+body {
+  margin: 4rem;
+  background-color: var(--bg-color1);
+  color: var(--txt-color);
+  font-family: "Prociono", serif;
+}
+a {
+  &:link {
+    color: var(--txt-color-link);
+  }
+}
+.tribute {
+  &-header {
+    h1 {
+      font-size: clamp(3rem, 6vh, 6rem);
+    }
+    p {
+      font-size: clamp(1rem, 3vh, 1.5rem);
+    }
+  }
+  &-info {
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    figcaption {
+      text-align: center;
+      background-color: var(--bg-color2);
+      padding: 1em;
+    }
+  }
+  &-timeline {
+    display: grid;
+    grid-gap: 2em;
+
+    h2 {
+      grid-column: 1 / 5;
+      font-size: clamp(2rem, 4vh, 4rem);
+    }
+    article {
+      h3 {
+        font-size: clamp(1.5rem, 3vh, 3rem);
+      }
+    }
+    blockquote {
+      background-color: var(--bg-color2);
+      padding: 2em 2em 3em;
+      grid-column: 1 / 5;
+    }
+  }
+  &-footer {
+    text-align: center;
+    padding-top: 2em;
+  }  
+}
