@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# echo "» Generating static pages..."
-# rm -fR docs
-# hugo
+echo "» Generating static pages..."
+rm -fR docs
+hugo
 echo "» Push updates to GIT..."
 git add . && sleep 1
 echo "Apa yang diubah kali ini?"

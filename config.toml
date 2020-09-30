@@ -1,5 +1,5 @@
-baseURL = ""
+baseURL = "https://git.erol.dev/fcc-rwd-tribute/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 assetDir = "assets"
-publishDir = "public"
+publishDir = "docs"
