@@ -1,4 +1,4 @@
-baseURL = "https://git.erol.dev/fcc-rwd-tribute/"
+baseURL = "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 assetDir = "assets"
